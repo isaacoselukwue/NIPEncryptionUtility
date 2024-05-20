@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>NIBSS NIP Utilities</Title>
+    <Description>This package allows you to use ssm encryption, decryption on .net core. You do not have to rely on the nibss old ssm that is only for java and .net framework projects.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>nip.png</PackageIcon>
+    <RepositoryUrl>https://github.com/isaacoselukwue/NIPEncryptionUtility</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\nip.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>Dlls\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.CryptoExt">
+      <HintPath>Dlls\BouncyCastle.CryptoExt.dll</HintPath>
+    </Reference>
+    <Reference Include="DidiSoft.Pgp">
+      <HintPath>Dlls\DidiSoft.Pgp.dll</HintPath>
+    </Reference>
+    <Reference Include="DidiSoft.Pgp.Net.LdapClient">
+      <HintPath>Dlls\DidiSoft.Pgp.Net.LdapClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

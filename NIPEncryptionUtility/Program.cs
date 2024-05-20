@@ -1,5 +1,6 @@
 ﻿using DidiSoft.Pgp;
 using NIPEncryptionUtility;
+using NIPUtility;
 using Serilog;
 using System.Text;
 
