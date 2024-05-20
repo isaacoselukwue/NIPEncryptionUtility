@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>Dlls\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.CryptoExt">
+      <HintPath>Dlls\BouncyCastle.CryptoExt.dll</HintPath>
+    </Reference>
+    <Reference Include="DidiSoft.Pgp">
+      <HintPath>Dlls\DidiSoft.Pgp.dll</HintPath>
+    </Reference>
+    <Reference Include="DidiSoft.Pgp.Net.LdapClient">
+      <HintPath>Dlls\DidiSoft.Pgp.Net.LdapClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
